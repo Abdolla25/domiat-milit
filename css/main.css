@@ -1,6 +1,42 @@
 /* --- Main styles file --- */
 
+/* reset some defaults */
+
+a {color:#223369}
+
+a:hover {color:#e51f25}
+
+.btn-primary {
+  background-color: #223369;
+  border-color: #223369;
+}
+
+.btn-primary:hover {
+  background-color: #e51f25;
+  border-color: #e51f25;
+}
+
+.btn-outline-primary {
+  color: #223369;
+  border-color: #223369;
+}
+
+.btn-outline-primary:hover {
+  background-color: #e51f25;
+  border-color: #e51f25;
+}
+
+.dropdown-item:hover {background-color: #2233693a;}
+
+.dropdown-item:active {background-color: #e51f25;}
+
+
 /* --- Navbar --- */
+
+.blur-img {
+  -webkit-filter: blur(5px) brightness(50%);
+  filter: blur(5px) brightness(50%);
+}
 
 .nav-link {white-space: nowrap;}
 
@@ -65,4 +101,12 @@ color: #007bff;
 .nav-underline .active {
 font-weight: 500;
 color: #343a40;
+}
+
+
+/*  */
+
+.main-icons {
+  font-size: 8rem;
+  color: #223369;
 }
