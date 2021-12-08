@@ -2,7 +2,7 @@
 
 /* reset some defaults */
 
-a {color:#223369}
+a {color:#223369;text-decoration: none;}
 
 a:hover {color:#e51f25}
 
