@@ -12,7 +12,7 @@
 }
 
 a {color:#223369;text-decoration: none;}
-a:hover {color:#e51f25}
+a:hover, a:active {color:#e51f25}
 
 .btn-primary {
   background-color: #223369;
