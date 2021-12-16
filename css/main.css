@@ -1,9 +1,17 @@
 /* --- Main styles file --- */
 
+/* --- Google Fonts --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
 /* reset some defaults */
 
-a {color:#223369;text-decoration: none;}
+* {
+  font-family: 'Cairo', sans-serif;
+}
 
+a {color:#223369;text-decoration: none;}
 a:hover {color:#e51f25}
 
 .btn-primary {
@@ -46,7 +54,10 @@ a:hover {color:#e51f25}
 
 .navbar-brand img {
     max-height: 100px;
+    transition: 0.4s;
 }
+
+#nav-collapse {transition: 0.4s;}
 
 @media (max-width: 991.98px) {
     .offcanvas-collapse {
@@ -104,9 +115,13 @@ color: #343a40;
 }
 
 
-/*  */
+/* Main Content */
 
 .main-icons {
   font-size: 8rem;
   color: #223369;
+}
+
+.time-table span.text-muted {
+  font-size: smaller;
 }
