@@ -24,6 +24,11 @@ a:hover, a:active {color:#e51f25}
   border-color: #e51f25;
 }
 
+.btn-primary:focus {
+  background-color: #e51f25;
+  border-color: #e51f25;
+}
+
 .btn-outline-primary {
   color: #223369;
   border-color: #223369;
@@ -125,4 +130,4 @@ color: #343a40;
 .time-table th,.time-table td, .time-table td span.text-muted {
   font-size: smaller;
 }
-.btn-filter {margin: 2px;}
+.btn-filter {margin: 3px;}
