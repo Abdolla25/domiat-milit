@@ -8,5 +8,4 @@ $(document).ready(function () {
         $('.table-removable').css('display', 'none').fadeIn('slow');
       }
     });
-
  });

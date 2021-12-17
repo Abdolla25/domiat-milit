@@ -122,6 +122,7 @@ color: #343a40;
   color: #223369;
 }
 
-.time-table span.text-muted {
+.time-table th,.time-table td, .time-table td span.text-muted {
   font-size: smaller;
 }
+.btn-filter {margin: 2px;}
