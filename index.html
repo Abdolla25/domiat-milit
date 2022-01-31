@@ -1,528 +1,333 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Abdulla Zahran">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Page Not Found :( - Redirect Page</title>
+        <style>
+            /* Custom 404 */
+            /* Tested in Safari 6+, Chrome 26+, Firefox 23+, IE10, Opera 12+ */
+            /* This page was created to demonstrate CSS3 features - thus it may not validate CSS specs */
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">    
-    <style>
-        .bd-placeholder-img {
-          font-size: 1.125rem;
-          text-anchor: middle;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          user-select: none;
+        @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,200);    
+        
+        /* SELECTED TEXT */
+        ::selection { background: #ff5e99; color: #FFFFFF; text-shadow: 0; }
+        ::-moz-selection { background: #ff5e99; color: #FFFFFF; }
+
+        html {
+            margin-top: 80px;
+            padding: 30px 10px;
+            font-size: 20px;
+            line-height: 1;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            
+            /* BG pattern */
+            background:
+            -webkit-radial-gradient(black 15%, transparent 16%) 0 0, 
+            -webkit-radial-gradient(black 15%, transparent 16%) 8px 8px, 
+            -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px, 
+            -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+            
+            background:
+            radial-gradient(black 15%, transparent 16%) 0 0,
+            radial-gradient(black 15%, transparent 16%) 8px 8px,
+            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+                        
+            background-color:#282828;
+            background-size:16px 16px;
+            
         }
-  
-        @media (min-width: 768px) {
-          .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-          }
+
+        html, input { font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+        p { margin: 16px 0; }
+        
+        body {
+            background: none repeat scroll 0 0 #982E33;
+            border-radius: 14px 14px 14px 14px;
+            border-top: 2px solid #B65156;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+            margin: 0 auto;
+            width: 500px;
+            _width: 500px;
+            padding: 30px 10px 10px;
         }
-    </style>
+          
+        body, a, a:visited, a:active {
+            color: #f1f1f1;
+            text-decoration: none;
+        }
+               
+        ul {
+            font-size: 16px;
+            line-height: 1.4;
+            list-style: square outside none;
+            margin: 16px 24px 40px;
+            padding: 0 0 0 40px;
+        }
 
-    <!-- Custom Styles -->
-    <link href="css/carousel.rtl.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
+        h1 {
+            margin:0;
+            font-size: 76px;
+            text-align: center;
+            margin: 0 0 0px 0;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+            
+        }
+
+        h2 {
+            font-size: 50px;
+            text-align: center;
+            margin: 12px 0 0 0;
+            text-transform: uppercase;
+            line-height: 40px;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+        }
+
+        h3 {
+            margin: 40px 0 8px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+        
+        h4 {
+            margin: 24px 0 8px 18px;
+            text-transform: uppercase;
+        }
+        
+        .author {
+            font-size: 14px;
+            padding: 0 10px 0 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 468px;
+            _width: 468px;
+            margin: 0 auto;
+        }
+        
+        .warning {
+            margin: 40px 0 40px 0;
+            padding: 10px 20px 16px;
+            border-top:    1px solid #999;
+            border-bottom: 1px solid #999;
+        }
+        
+        .warning .sign.alert {
+            background-image: url("https://cdn-icons-png.flaticon.com/64/103/103085.png");
+            background-repeat: no-repeat;
+            height: 64px;
+            margin-right: 20px;
+            float:left;
+            text-indent: -9999px;
+            width: 69px;
+        }            
+        
+        .warning p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+                
+        .sign.tip {
+            background-image: url("https://cdn-icons-png.flaticon.com/64/103/103085.png");
+            background-position: -70px -45px;
+            background-repeat: no-repeat;
+            background-size: 90px auto;
+            float: left;
+            height: 20px;
+            margin-right: 6px;
+            text-indent: -9999px;
+            width: 20px;
+        }       
+        
+        .sign.call {
+            background-image: url("http://simonalex.com/demo/404/redbox/404_icon_white.png");
+            background-position: -70px -22px;
+            background-repeat: no-repeat;
+            background-size: 90px auto;
+            float: left;
+            height: 20px;
+            margin: 15px 8px 0 0;
+            text-indent: -9999px;
+            width: 20px;
+        }  
+                   
+        .contact {
+            padding: 4px 20px;
+            background: #490a0e;
+            border-radius: 6px;
+            font-size: 12px;
+        }
+        
+        .copyright {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        
+        
+        /* Glass cover */
+        body:before {         
+            background: -moz-linear-gradient(-40deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.1) 40%, rgba(10,14,10,0.09) 40%, rgba(255,255,255,0.2) 90%); /* FF3.6+ */
+            background: -webkit-linear-gradient(-40deg, rgba(255,255,255,0.09) 0%,rgba(255,255,255,0.1) 40%,rgba(10,14,10,0.09) 40%,rgba(255,255,255,0.2) 90%); /* Chrome10+,Safari5.1+ */            
+            background: -o-linear-gradient(-40deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.1) 40%, rgba(10,14,10,0.09) 40%, rgba(255,255,255,0.2) 90%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(-40deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.1) 40%, rgba(10,14,10,0.09) 40%, rgba(255,255,255,0.2) 90%); /* IE10+ */
+            background: linear-gradient(-220deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.1) 40%, rgba(10,14,10,0.09) 40%, rgba(255,255,255,0.2) 90%); /* W3C */
+
+            border-radius: 6px 6px 6px 6px;
+            border-top: 3px solid rgba(255, 255, 255, 0.2);
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            content: " ";
+            height: 836px;
+            margin: -70px 0 0 -40px;
+            position: absolute;
+            width: 580px;
+        }                           
+               
+        /* Cover holder */            
+          #header:before, #header:after, .copyright:before, .copyright:after {
+                background: -moz-linear-gradient(-40deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, #0A0E0A 50%, #FFFFFF 100%); /* FF3.6+ */
+                background: -webkit-linear-gradient(-40deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, #0A0E0A 50%, #FFFFFF 100%); /* Chrome10+,Safari5.1+ */            
+                background: -o-linear-gradient(-40deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, #0A0E0A 50%, #FFFFFF 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(-40deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, #0A0E0A 50%, #FFFFFF 100%); /* IE10+ */
+                background: linear-gradient(-220deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, #0A0E0A 50%, #FFFFFF 100%);
+
+                border: 0px solid #999999;
+                border-radius: 10px 10px 10px 10px;
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) inset, 0 0 3px #000000;
+                content: " ";
+                display: block;
+                height: 18px;
+                position: absolute;
+                width: 18px;
+            }
+            
+            #header:before {
+                margin: -50px 0 0 -36px;
+            }
+            
+            #header:after {
+                margin: -348px 0 0 485px;
+            }
+            
+            .copyright:before {
+                margin: 40px 0 0 -36px;
+            }
+            .copyright:after {
+                margin: 28px 0 0 485px;
+            } 
+
+                   
+                   
+         /* Animation */          
+                .sign.alert {
+                    -webkit-animation: blink 1s infinite;
+                    -moz-animation:    blink 1s infinite;
+                    -ms-animation:     blink 1s infinite;
+                     animation:        blink 1s infinite;
+                }
+                
+                @-webkit-keyframes blink {
+                   0% { opacity: 0.1; }
+                   50% { opacity: 1; }
+                   100% { opacity: 0.1; }  
+                }
+                
+                @-moz-keyframes blink {
+                   0% { opacity: 0.1; }
+                   50% { opacity: 1; }
+                   100% { opacity: 0.1; }  
+                }
+                
+                @-ms-keyframes blink {
+                   0% { opacity: 0.1; }
+                   50% { opacity: 1; }
+                   100% { opacity: 0.1; }  
+                }
+                
+                @keyframes blink {
+                   0% { opacity: 0.1; }
+                   50% { opacity: 1; }
+                   100% { opacity: 0.1; }            
+                }
 
 
-    <title>المستشفى العسكري بدمياط الجديدة</title>
-  </head>
-  <body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" aria-label="Main navigation">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img id="logo" src="img/logoHQ.png" alt="المستشفى العسكري بدمياط الجديدة">
-              </a>
-              <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <div id="nav-collapse" class="navbar-collapse offcanvas-collapse navbar-light bg-light" id="navbarsExampleDefault">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">عن المستشفى</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><a class="dropdown-item" href="#">نظرة عامة</a></li>
-                                <li><a class="dropdown-item" href="#">رسالتنا ورؤيتنا</a></li>
-                                <li><a class="dropdown-item" href="#">مجلس الإدارة</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">الخدمات الطبية</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><a class="dropdown-item" href="#">قسم العلاج الطبيعي</a></li>
-                                <li><a class="dropdown-item" href="#">قسم الغسيل الكلوي</a></li>
-                                <li><a class="dropdown-item" href="#">قسم المناظير</a></li>
-                                <li><a class="dropdown-item" href="#">قسم الحضانات وحديثي الولادة</a></li>
-                                <li><a class="dropdown-item" href="#">قسم الداخلي والحجز</a></li>
-                                <li><a class="dropdown-item" href="#">قسم الاستقبال والطوارئ</a></li>
-                                <li><a class="dropdown-item" href="#">قسم الرعاية المركزة</a></li>
-                                <li><a class="dropdown-item" href="#">قسم العمليات</a></li>
-                                <li><a class="dropdown-item" href="#">قسم المعمل</a></li>
-                                <li><a class="dropdown-item" href="#">قسم الأشعة</a></li>
-                                <li><a class="dropdown-item" href="#">قسم العزل</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">العيادات الخارجية</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><a class="dropdown-item" href="#">عيادة أمراض الصدر والحساسية</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة الأمراض النفسية والعصبية</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة الغدد الصماء</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة الروماتيزم</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة التغذية</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة الأمراض الجلدية والتناسلية</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة الأطفال</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة الأنف والأذن والحنجرة</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة جراحة المخ والأعصاب</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة الرمد</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة جراحة العظام</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة القلب والإيكو</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة الأسنان</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة النساء والتوليد</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة السونار</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة الكلى والجهاز الهضمي</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة الباطنة</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة المسالك</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة الجراحة العامة</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة جراحة الأوعية الدموية</a></li>
-                                <li><a class="dropdown-item" href="#">عيادة التجميل وتساقط الشعر</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">مواعيد العمل</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">تواصل معنا</a>
-                        </li>
-                    </ul>
-                    <form class="navbar-search d-flex">
-                        <input class="form-control me-2" type="search" placeholder="بحث في الموقع" aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">بحث</button>
-                    </form>
-                </div>
+        /* Marquee Animation */                    
+                #footer, .marquee { overflow: hidden; }
+        
+                .marquee {
+                    -webkit-animation: scroll 10s ease infinite;
+                    -moz-animation:    scroll 10s ease infinite;
+                    -ms-animation:     scroll 10s ease infinite;
+                     animation:        scroll 10s ease infinite;
+                }
+            
+                @-webkit-keyframes scroll {
+                    0%  { -webkit-transform:translateX(100%);opacity:0; }  
+                    10% { -webkit-transform:translateX(0);opacity:1; }  
+                    40% { -webkit-transform:translateX(0%); }  
+                    50% { -webkit-transform:translateX(0%); } 
+                    90% { opacity:1;}  
+                    100% { opacity:0;}  
+                }
+                    
+                @-moz-keyframes scroll {
+                    0%  { -moz-transform:translateX(100%);opacity:0; }  
+                    10% { -moz-transform:translateX(0);opacity:1; }  
+                    40% { -moz-transform:translateX(0%); }  
+                    50% { -moz-transform:translateX(0%); } 
+                    90% { opacity:1;}  
+                    100% { opacity:0;}  
+                }
+                    
+                @keyframes scroll {
+                    0%  { transform:translateX(100%);opacity:0; }  
+                    10% { transform:translateX(0);opacity:1; }  
+                    40% { transform:translateX(0%); }  
+                    50% { transform:translateX(0%); } 
+                    90% { opacity:1;}  
+                    100% { opacity:0;}            
+                }            
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div id="header"> 
+                <h1>404 ERROR</h1>
+                <h2>Page Not Found</h2>
+                
+                <h3 class="quote">"The way to love anything is to realize that it may be lost."</h3>
+                <p class="author"><em>- Gilbert K. Chesterton</em></p>
             </div>
-          </nav>
-    </header>
-    
-    <main>
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          
+            <div class="warning">            
+                <p class="sign alert">Alert!</p>
+                <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/carousel-1.jpg" class="img-fluid blur-img" alt="مستشفى دمياط العسكري">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>المستشفى العسكري ... صحتك تهمنا</h1>
-                            <p>نحن نقدم الرعاية الصحية على أعلى مستوى من الجودة والأمان فى مصر وإفريقيا والشرق الأوسط.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">سجل اليوم</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carousel-4.png" class="img-fluid blur-img" alt="مستشفى دمياط العسكري">        
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>رعاية صحية متميزة</h1>
-                            <p>يقدم أطباؤنا وموظفونا المرموقون لمرضانا العناية الطبية والجراحية النادرة لتدعيم أعلى مستويات الصحة والراحة.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">أعرف أكثر</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carousel-3.jpg" class="img-fluid blur-img" alt="مستشفى دمياط العسكري">          
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>كوادر طبية مميزة</h1>
-                            <p>تضم المستشفى العسكري بدمياط الجديدة نخبة من أفضل الأطباء الحاصلين على أعلى الشهادات الجامعية المصرية والأجنبية في مختلف التخصصات.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">تصفح المعرض</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">السابق</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">التالي</span>
-            </button>
-        </div>
-    
-    
-        <!-- Marketing messaging and featurettes
-        ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-    
-        <div class="container marketing">
-    
-            <!-- Three columns of text below the carousel -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <i class="fa fa-user-md main-icons"></i>  
-                    <h2>العيادات الخارجية</h2>
-                    <p>تتميز العيادات الخارجية لدينا بتغطية جميع التخصصات الطبية والجراحية.</p>
-                    <p><a class="btn btn-primary" href="#">عرض التفاصيل</a></p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <i class="fa fa-clock-o main-icons"></i>        
-                    <h2>مواعيد العمل</h2>
-                    <p>نعمل 24 ساعة يومياً في الطوارئ والاستقبال على مدار الأسبوع</p>
-                    <p><a class="btn btn-primary" href="#">عرض التفاصيل</a></p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <i class="fa fa-phone main-icons"></i>        
-                    <h2>تواصل معنا</h2>
-                    <p>يمكنك التواصل معنا على مدار الساعة للاستعلام عن طريق الاتصال على الرقم <a href="tel:0572402556">057-2402556</a></p>
-                    <p><a class="btn btn-primary" href="#">عرض التفاصيل</a></p>
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-    
-            <!-- START THE FEATURETTES -->
-    
-            <hr class="featurette-divider">
-    
-            <div class="row featurette">
-                <div class="col">
-                    <h2 style="margin-bottom: 5rem;" class="featurette-heading">مواعيد العيادات<span class="text-muted"> الخارجية</span></h2>
-                    <div class="container">
-                        <div class="row" style="margin-bottom: 1rem;">
-                            <div class="col">
-                                <button type="button" class="btn btn-primary btn-filter" data-target="all">جميع العيادات</button>
-                                <button type="button" class="btn btn-primary btn-filter" data-target="x1">عيادة الباطنة</button>
-                                <button type="button" class="btn btn-primary btn-filter" data-target="x2">عيادة الجهاز الهضمي</button>
-                                <button type="button" class="btn btn-primary btn-filter" data-target="x3">عيادة الأسنان</button>
-                                <button type="button" class="btn btn-primary btn-filter" data-target="x4">عيادة الرمد</button>
-                                <button type="button" class="btn btn-primary btn-filter" data-target="x5">عيادة القلب</button>
-                                <button type="button" class="btn btn-primary btn-filter" data-target="x6">عيادة الإيكو</button>
-                                <button type="button" class="btn btn-primary btn-filter" data-target="x7">عيادة الأطفال</button>
-                                <button type="button" class="btn btn-primary btn-filter" data-target="x8">عيادة الجلدية</button>
-                                <button type="button" class="btn btn-primary btn-filter" data-target="x9">عيادة النساء والتوليد</button>
-                            </div>
-                        </div>
-                        <div class="table-responsive">
-                            <table class="time-table table table-striped table-bordered align-middle">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">التخصص</th>
-                                        <th scope="col">السبت</th>
-                                        <th scope="col">الأحد</th>
-                                        <th scope="col">الإثنين</th>
-                                        <th scope="col">الثلاثاء</th>
-                                        <th scope="col">الأربعاء</th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                                    <tr>
-                                        <th scope="col" colspan="6" style="text-align: center;">
-                                            الحجز يبدأ من 8 صباحاً بالمستشفى
-                                            <span class="text-muted">غير متوفر الحجز عن طريق التليفون</span>
-                                        </th>
-                                    </tr>
-                                </tfoot>
-                                <tbody>
-                                  <tr class="table-removable" data-status="x1">
-                                    <th scope="row">الباطنة</th>
-                                    <td>
-                                        د. مصطفى الخواجه
-                                        <br>
-                                        <span class="text-muted">استشاري الباطنة</span>
-                                    </td>
-                                    <td>
-                                        د. سمير الشربيني
-                                        <br>
-                                        <span class="text-muted">استشاري الباطنة</span>
-                                    </td>
-                                    <td>
-                                        د. إيهاب عبدالعال
-                                        <br>
-                                        <span class="text-muted">أخصائي كبد وجهاز هضمي</span>
-                                    </td>
-                                    <td>
-                                        د. إيهاب عبدالعال
-                                        <br>
-                                        <span class="text-muted">أخصائي كبد وجهاز هضمي</span>
-                                    </td>
-                                    <td>
-                                        د. محمود شريف
-                                        <br>
-                                        <span class="text-muted">أخصائي جهاز هضمي ومناظير</span>
-                                    </td>
-                                  </tr>
-                                  <tr class="table-removable" data-status="x2">
-                                    <th scope="row">الجهاز الهضمي</th>
-                                    <td>
-                                         
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                    <td>
-                                        
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                    <td>
-                                        د. محمد حيزة
-                                        <br>
-                                        <span class="text-muted">استشاري كبد وجهاز هضمي ومناظير</span>
-                                    </td>
-                                    <td>
-                                        
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                    <td>
-                                        أ د. سعد الدين الشريف
-                                        <br>
-                                        <span class="text-muted">استشاري كبد وجهاز هضمي ومناظير</span>
-                                    </td>
-                                  </tr>
-                                  <tr class="table-removable" data-status="x3">
-                                    <th scope="row">الأسنان</th>
-                                    <td colspan="5" style="text-align: center;">
-                                        يومياً من السبت إلى الأربعاء
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                  </tr>
-                                  <tr class="table-removable" data-status="x4">
-                                    <th scope="row">الرمد</th>
-                                    <td>
-                                        د. نسرين البلتاجي
-                                        <br>
-                                        <span class="text-muted">أخصائي الرمد</span>
-                                    </td>
-                                    <td>
-                                        د. إسلام مدحت
-                                        <br>
-                                        <span class="text-muted">أخصائي الرمد</span>
-                                    </td>
-                                    <td>
-                                        د. حسام فهمي
-                                        <br>
-                                        <span class="text-muted">أخصائي الرمد</span>
-                                    </td>
-                                    <td>
-                                        د. محمد عاصم
-                                        <br>
-                                        <span class="text-muted">أخصائي الرمد</span>
-                                    </td>
-                                    <td>
-                                        د. محمد عاطف العشماوي
-                                        <br>
-                                        <span class="text-muted">استشاري الرمد</span>
-                                    </td>
-                                  </tr>
-                                  <tr class="table-removable" data-status="x5">
-                                    <th scope="row">القلب</th>
-                                    <td>
-                                        
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                    <td>
-                                        د. هاني مهنى
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                    <td>
-                                        د. معتز هاشم
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                    <td>
-                                        د. وسيم عمر
-                                        <br>
-                                        <span class="text-muted">استشاري أمراض القلب</span>
-                                    </td>
-                                    <td>
-                                        د. حسام الجمل
-                                        <br>
-                                        <span class="text-muted">أخصائي أمراض القلب</span>
-                                    </td>
-                                  </tr>
-                                  <tr class="table-removable" data-status="x6">
-                                    <th scope="row">الإيكو</th>
-                                    <td>
-                                        د. نادية مصباح
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                    <td>
-                                        د. وسيم عمر
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                    <td>
-                                        د. وسيم عمر
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                    <td>
-                                        د. حسام الجمل
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                    <td>
-                                        
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                  </tr>
-                                  <tr class="table-removable" data-status="x7">
-                                    <th scope="row">الأطفال</th>
-                                    <td>
-                                        د. رانيا نشأت
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                    <td>
-                                        
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                    <td>
-                                        
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                    <td>
-                                        
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                    <td>
-                                        د. رانيا نشأت
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                  </tr>
-                                  <tr class="table-removable" data-status="x8">
-                                    <th scope="row">الجلدية</th>
-                                    <td>
-                                        د. عمرو شبكة
-                                        <br>
-                                        <span class="text-muted">أخصائي الأمراض الجلدية</span>
-                                    </td>
-                                    <td>
-                                        د. ماجدة كامل
-                                        <br>
-                                        <span class="text-muted">استشاري الجلدية</span>
-                                    </td>
-                                    <td>
-                                        د. جابر عوض
-                                        <br>
-                                        <span class="text-muted">استشاري الجلدية</span>
-                                    </td>
-                                    <td>
-                                        د. نرمين محمد الوسية
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                    <td>
-                                        
-                                        <br>
-                                        <span class="text-muted"></span>
-                                    </td>
-                                  </tr>
-                                  <tr class="table-removable" data-status="x9">
-                                    <th scope="row">النساء والتوليد</th>
-                                    <td>
-                                        د. سلوى سمير عنتر
-                                        <br>
-                                        <span class="text-muted">استشاري النساء والتوليد</span>
-                                    </td>
-                                    <td>
-                                        د. ثروت صقر
-                                        <br>
-                                        <span class="text-muted">استشاري النساء والتوليد</span>
-                                    </td>
-                                    <td>
-                                        د. ريهام الطرابيلي
-                                        <br>
-                                        <span class="text-muted">أخصائي النساء والتوليد</span>
-                                    </td>
-                                    <td>
-                                        د. سلوى سمير عنتر
-                                        <br>
-                                        <span class="text-muted">استشاري النساء والتوليد</span>
-                                    </td>
-                                    <td>
-                                        د. محمد مجاهد
-                                        <br>
-                                        <span class="text-muted">أخصائي النساء والتوليد</span>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <hr class="featurette-divider">
-    
-            <!-- <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">أوه نعم، هذا جيد. <span class="text-muted"> شاهد بنفسك. </span></h2>
-                    <p class="lead">عندما نضحك أو نبكي، فإننا نعرض عواطفنا، مما يسمح للآخرين بإلقاء نظرة خاطفة على أذهاننا أثناء "قراءة" وجوهنا بناءً على التغييرات في مكوّنات الوجه الرئيسة، مثل: العينين والحاجبين والجفنين والأنف والشفتين.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-                </div>
-            </div>
-    
-            <hr class="featurette-divider">
-    
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">وأخيرًا، هذا. <span class="text-muted"> كش ملك. </span></h2>
-                    <p class="lead">إن جميع العضلات في أجسامنا مدعمة بالأعصاب المتصلة من كافة أنحاء الجسم بالنخاع الشوكي والدماغ. وهذا الاتصال العصبي هو ثنائي الاتجاه، أي إن العصب يتسبَّب في تقلصات العضلات بناءً على إشارات الدماغ، ويقوم في الوقت نفسه بإرسال معلومات عن حالة العضلات إلى الدماغ</p>
-                </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-                </div>
-            </div>
-    
-            <hr class="featurette-divider"> -->
-    
-            <!-- /END THE FEATURETTES -->
-    
-        </div><!-- /.container -->
-    
-    
-        <!-- FOOTER -->
-        <footer class="container">
-            <p class="float-end"><a href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true" style="font-size:2.5rem"></i></a></p>
-            <p>المستشفى العسكري بدمياط الجديدة &copy; 2021 &middot; <a href="#">سياسة الخصوصية</a> &middot; <a href="#">شروط الاستخدام</a></p>
-        </footer>
-    </main>
-    
-    <!-- Script Files -->
-    
 
-    <!-- Vue.js File -->
-    <script src="js/vue.js"></script>
+            
+            <h4><i class="sign tip">Tip: </i><strong>Please try the following:</strong></h4>
+            <ul>
+              <li>Check your spelling</li>
+              <li>Go to the main site and search again</li>
+              <li><a href="javascript:history.back()">Go back to the previous page</a></li>
+            </ul>
+            
 
-    <!-- Bootstrap v5.0.2 File -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
-    <!-- jQuery v3.5.1 File -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    <!-- Additional Functions -->
-    <script src="js/offcanvas.js"></script>
-    <script src="js/on-scroll.js"></script>
-    <script src="js/table-filter.js"></script>
-  </body>
+            <div id="footer">            
+                <div class="contact"><i class="sign call">Tip: </i><p class="marquee">If you think this is a server error, please contact the system administrator.</p></div>            
+                        
+                <p class="copyright">&copy; 2013 Redfrost.com</p>
+            </div> 
+        </div>     
+                        
+    </body>
 </html>
