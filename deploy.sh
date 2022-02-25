@@ -5,5 +5,5 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:Abdolla25/domiat-milit.git main:gh-pages
+git push -f git@github.com:Abdolla25/domiat-milit.git master:gh-pages
 cd -
